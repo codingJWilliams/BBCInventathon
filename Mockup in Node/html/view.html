@@ -41,15 +41,46 @@
     })
     socket.on('disconnect', function(){});*/
     //$("body").css("background-image","url('bannana-apple.png')");
-    var mappings = {
-      KeyB: "bannana",
-      KeyA: "apple"
+    var bases = {
+      lemon: "url('lemons-base.jpg')",
+      bannana: "url('bannana-base.jpg')",
+      lime: "url('lime-base.jpg')",
+      orange: "url('orange-base.jpg')"
     }
+    var out = [];
+    for (key in bases){
+      if (!bases.hasOwnProperty(key)) continue;
+      out.push(bases[key])
+    }
+    function choose(choices) {
+      var index = Math.floor(Math.random() * choices.length);
+      return choices[index];
+    }
+    var mappings = {
+      Digit1: "lemon",
+      Digit2: "bannana",
+      Digit3: "lime",
+      Digit4: "orange"
+    }
+
+    var current = {pic: "lemon", word: "bannana"}
+    function initPic(pic, word) {
+      $("html").css("background-image", bases[pic]);
+      $("h1").text(pic.toUpperCase());
+    }
+    initPic("lemon", "bannana")
     document.onkeyup = function (e) {
       var mapped = mappings[e.code]
       if(mapped == undefined) return;
-      if(mapped == "apple") {
-        $("html").css("background-image","url('apple-banana.png')")
+
+      if (mapped == current.word) {
+        // Go to next
+        console.log("Going next")
+      }
+      else {
+      }
+
+
       }
     }
   </script>
