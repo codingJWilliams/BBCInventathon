@@ -8,6 +8,7 @@ app.get('/', function(req, res){
 app.get("/master/", function(req, res){
   res.sendFile(__dirname + "/html/lobby.html")
 })
+app.use(express.static('assets'))
 io.on('connection', function(socket){
   console.log('a user connected');
   socket.on("start-connection", function(param){
