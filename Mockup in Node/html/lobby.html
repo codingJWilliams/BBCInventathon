@@ -1,0 +1,13 @@
+<input type="text" onkeydown="startThing()" onkeyup="endThing()">
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+  socket.on('connect', function(){});
+  function startThing() {
+    socket.emit("start-connection", {})
+  }
+  function endThing() {
+    socket.emit("end-connection", {})
+  }
+  socket.on('disconnect', function(){});
+</script>
