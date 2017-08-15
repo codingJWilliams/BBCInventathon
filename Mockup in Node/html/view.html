@@ -41,5 +41,16 @@
     })
     socket.on('disconnect', function(){});*/
     //$("body").css("background-image","url('bannana-apple.png')");
+    var mappings = {
+      KeyB: "bannana",
+      KeyA: "apple"
+    }
+    document.onkeyup = function (e) {
+      var mapped = mappings[e.code]
+      if(mapped == undefined) return;
+      if(mapped == "bannana") {
+        
+      }
+    }
   </script>
   </html>
