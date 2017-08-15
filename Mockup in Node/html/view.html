@@ -28,6 +28,7 @@
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
+  <script src="https://raw.githubusercontent.com/lokesh/color-thief/master/dist/color-thief.min.js"></script>
   <script>/*
     var socket = io();
     socket.on('connect', function(){});
@@ -62,8 +63,6 @@
       KeyS: "lime",
       KeyD: "orange"
     }
-
-    var current = {pic: "lemon", word: "bannana"}
 
     function initPic(pic, word) {
       $("html").css("background-image", pic);
