@@ -10,7 +10,7 @@
   	line-height: 53.9px;
   }
   html {
-    background: url("bannana-apple.png") no-repeat center center fixed;
+    background: url("") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -50,31 +50,40 @@
     var out = [];
     for (key in bases){
       if (!bases.hasOwnProperty(key)) continue;
-      out.push(bases[key])
+      out.push(key)
     }
     function choose(choices) {
       var index = Math.floor(Math.random() * choices.length);
       return choices[index];
     }
     var mappings = {
-      Digit1: "lemon",
-      Digit2: "bannana",
-      Digit3: "lime",
-      Digit4: "orange"
+      KeyA: "lemon",
+      KeyW: "bannana",
+      KeyS: "lime",
+      KeyD: "orange"
     }
 
     var current = {pic: "lemon", word: "bannana"}
+
     function initPic(pic, word) {
-      $("html").css("background-image", bases[pic]);
-      $("h1").text(pic.toUpperCase());
+      $("html").css("background-image", pic);
+      $("h1").text(word);
+      current.pic = pic;
+      current.word = word;
     }
-    initPic("lemon", "bannana")
+
+    initPic(bases[choose(out)], choose(out))
+
     document.onkeyup = function (e) {
       var mapped = mappings[e.code]
       if(mapped == undefined) return;
 
       if (mapped == current.word) {
         // Go to next
+        var key = choose(out)
+        var key2 = choose(out)
+        console.log(key, key2)
+        initPic(bases[key2], key)
         console.log("Going next")
       }
       else {
