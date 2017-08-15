@@ -1,5 +1,8 @@
 import msvrct
-print("Press s or n to continue")
+import Image
+def show_image(image_location):
+  image = Image.open(image_location)
+  image.show()
 input_char=msvcrt.getch()
 if input_char.upper()=='W':
   print("Strawberry")
