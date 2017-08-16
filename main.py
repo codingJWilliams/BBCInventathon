@@ -40,15 +40,15 @@ while time.time()-start_time<=60:
       if proc.name() == "display":
         proc.kill()
   elif number==1:
-    while input_char!=orange:
-      show_image("/assets/bannana-orange.png")
+    while input_char!=lime:
+      show_image("/assets/bannana-lime.png")
     score=score+1
     for proc in psutil.process_iter():
       if proc.name() == "display":
         proc.kill()
   elif number==2:
-    while input_char!=lime:
-      show_image("/assets/bannana-lime.png")
+    while input_char!=orange:
+      show_image("/assets/bannana-orange.png")
     score=score+1
     for proc in psutil.process_iter():
       if proc.name() == "display":
@@ -61,15 +61,15 @@ while time.time()-start_time<=60:
       if proc.name() == "display":
         proc.kill()
   elif number==4:
-    while input_char!=orange:
-      show_image("/assets/lemon-orange.png")
+    while input_char!=lime:
+      show_image("/assets/lemon-lime.png")
     score=score+1
     for proc in psutil.process_iter():
       if proc.name() == "display":
         proc.kill()
   elif number==5:
-    while input_char!=lime:
-      show_image("/assets/lemon-lime.png")
+    while input_char!=orange:
+      show_image("/assets/lemon-orange.png")
     score=score+1
     for proc in psutil.process_iter():
       if proc.name() == "display":
