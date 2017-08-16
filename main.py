@@ -192,5 +192,5 @@ except FileNotFoundError:
 except Keyboard Interrupt:
   #flush the stdout buffer
   stdout.flush()
-  #get the process runign this code to commit suicide
+  #get the process runing this code to commit suicide
   exit()
