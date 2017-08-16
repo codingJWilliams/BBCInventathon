@@ -1,5 +1,5 @@
 ## BBCInventathon brain training game - Python version
 
-**__WARNING UNTESTED!**__
+**_WARNING UNTESTED!**_
 
-WARNING WORKS ON WINDOWS ONLY!
+**_WARNING WORKS ON WINDOWS ONLY!_**
