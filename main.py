@@ -2,7 +2,7 @@
 import msvrct
 #import libary to show images
 from PIL import Image
-#import liabry to kill process showung image
+#import libary to kill process showung image
 import psutil
 #import random number generation libary
 from random import randint
