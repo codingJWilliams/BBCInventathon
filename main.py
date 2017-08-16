@@ -110,7 +110,7 @@ try:
       while start_time-time.time<=3:
         while input_char!=lime:
           show_image("/assets/orange-lime.png")
-         score=score+1
+          score=score+1
       close_image()
     elif number==9:
       start_time=time.time()
