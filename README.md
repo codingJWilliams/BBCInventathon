@@ -1,4 +1,6 @@
 # BBCInventathon
-Python version
+## Python version
 
-WORKS ON WINDOWS ONLY!
+WARNING UNTESTED!
+
+WARNING WORKS ON WINDOWS ONLY!
