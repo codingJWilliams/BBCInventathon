@@ -1,4 +1,4 @@
-## BBCInventathon braon training game - Python version
+## BBCInventathon brain training game - Python version
 
 WARNING UNTESTED!
 
