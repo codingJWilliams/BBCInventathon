@@ -1,2 +1,2 @@
-* Top score and name
+* Name of top scorer
 * Test
