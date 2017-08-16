@@ -156,7 +156,7 @@ except FileNotFoundError:
   Bestscore=open("bestscorer.txt","w")
   #find the current time form the cpu and save it to the start_time variable
   Bestscorer.write("")
-  print("Files cretaed please start the program again")
+  print("Files created please start the program again")
   Bestscore.close()
   Bestscorer.close()
 except Keyboard Interrupt:
