@@ -1,6 +1,6 @@
-## BBCInventathon brain training game - Python version
+## BBC Inventathon brain training game
 
-This is a python version that is unfortunately serval stages behidn the node/js version
+This is a python version that is unfortunately serval stages behidn the node/js version due to unexpected delays in finding a libary to detect keypresses.
 
 **_WARNING UNTESTED!_**
 
