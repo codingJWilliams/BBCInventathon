@@ -2,10 +2,13 @@
 import msvrct
 #import libary to show images
 from PIL import Image
+#import liabry to kill process showung image
+import psutil
 #import random number generation libary
 from random import randint
 #import time
 import time
+from time import sleep
 #create a function to simplify showing images
 def show_image(image_location):
   image = Image.open(image_location)
@@ -29,38 +32,72 @@ while time.time()-start_time<=60:
     while input_char!=lemon:
       #show_image
       show_image("/assets/bannana-lemon.png")
+    #close image by finding pid of process sheoing image and then killing it
+    for proc in psutil.process_iter():
+      if proc.name() == "display":
+        proc.kill()
   elif number==1:
-    while input_char!=melon:
-      show_image("/assets/bannana-melon.png")
+    while input_char!=orange:
+      show_image("/assets/bannana-orange.png")
+    for proc in psutil.process_iter():
+      if proc.name() == "display":
+        proc.kill()
   elif number==2:
-    while input_char!=strawberry:
-      show_image("/assets/bannana-strawberry.png")
+    while input_char!=lime:
+      show_image("/assets/bannana-lime.png")
+    for proc in psutil.process_iter():
+      if proc.name() == "display":
+        proc.kill()
   elif number==3:
     while input_char!=bannana:
       show_image("/assets/lemon-bannana.png")
   elif number==4:
-    while input_char!=melon:
-      show_image("/assets/lemon-melon.png")
+    while input_char!=orange:
+      show_image("/assets/lemon-orange.png")
+    for proc in psutil.process_iter():
+      if proc.name() == "display":
+        proc.kill()
   elif number==5:
-    while input_char!=strawberry:
-      show_image("/assets/lemon-strawberry.png")
+    while input_char!=lime:
+      show_image("/assets/lemon-lime.png")
+    for proc in psutil.process_iter():
+      if proc.name() == "display":
+        proc.kill()
   elif number==6:
     while input_char!=bannana:
-      show_image("/assets/melon-bannana.png")
+      show_image("/assets/orange-bannana.png")
+    for proc in psutil.process_iter():
+      if proc.name() == "display":
+        proc.kill()
   elif number==7:
     while input_char!=lemon:
-      show_image("/assets/melon-lemon.png")
+      show_image("/assets/orange-lemon.png")
+    for proc in psutil.process_iter():
+      if proc.name() == "display":
+        proc.kill()
   elif number==8:
-    while input_char!=strawberry:
-      show_image("/assets/melon-strawberry.png")
+    while input_char!=lime:
+      show_image("/assets/orange-lime.png")
+    for proc in psutil.process_iter():
+      if proc.name() == "display":
+        proc.kill()
   elif number==9:
     while input_char!=bannana:
-      show_image("/assets/strawberry-bannana.png")
+      show_image("/assets/lime-bannana.png")
+    for proc in psutil.process_iter():
+      if proc.name() == "display":
+        proc.kill()
   elif number==10:
     while input_char!=lemon:
-      show_image("/assets/strawberry-lemon.png")
+      show_image("/assets/lime-lemon.png")
+    for proc in psutil.process_iter():
+      if proc.name() == "display":
+        proc.kill()
   elif number==11:
-    while input_char!=melon:
-      show_image("/assets/strawberry-melon.png")
+    while input_char!=orange:
+      show_image("/assets/lime-orange.png")
+    for proc in psutil.process_iter():
+      if proc.name() == "display":
+        proc.kill()
   #sleep to give cpu rest    
   sleep(0.05)
