@@ -1,18 +1,33 @@
+#import libary to read keypresses
 import msvrct
-import Image
+#import libary to show images
+from PIL import Image
+#import random number generation libary
 from random import randint
+#import time
+import time
+#create a function to simplify showing images
 def show_image(image_location):
   image = Image.open(image_location)
   image.show()
+#read the current keypress and save it to the input_char variable
 input_char=msvrct.getch()
-strawberry='w'
-bannana='a'
-lemon='s'
-melon='d'
-while True:
+#save the fruit names to the relevant charcaters the makey makey will send
+orange='1'
+bannana='2'
+lemon='3'
+lime='4'
+#save current cpu time in the start_time variable
+start_time=time.time()
+#while current time minus start tiem is less than or equal to 60
+while time.time()-start_time<=60:
+  #save a randomly generated number between 0 and 12 to the number variable
   number=randint(0,12)
+  #if number equal 0 then
   if number==0:
+    #while input_char variable isn't equal to the lemon variable
     while input_char!=lemon:
+      #show_image
       show_image("/assets/bannana-lemon.png")
   elif number==1:
     while input_char!=melon:
