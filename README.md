@@ -1,4 +1,4 @@
-## BBCInventathon entry - Python version
+## BBCInventathon braon training game - Python version
 
 WARNING UNTESTED!
 
