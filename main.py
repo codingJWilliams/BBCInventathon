@@ -34,13 +34,28 @@ score=0
 #save current cpu time in the start_time variable
 program_start_time=time.time()
 try:
-  #open Bestscore
+  #open bestscore.txt in read mode
   Bestscore = open('bestscore.txt','r') 
+  #open bestscorer.txt in read mode
   Bestscorer = open('bestscorer.txt','r') 
   #if Bestscore is blank
   if Bestscore.read()=="":
-    #raise a FileNotFoundError
+    #raise a FileNotFoundError as it might aswell not exist in it's current state
     raise FileNotFoundError
+  #if the best scorer.txt file is empty
+  elif Bestscorer.read()=="":
+    #open bestscore.txt in write mode
+     Bestscorer = open('bestscorer.txt','w')
+     #Write the text no one
+     Bestscorer.write("No one")
+     #open bestscorer.txt in read mode
+     Bestscorer = open('bestscorer.txt','r') 
+      #store the contents of the bestscore.txt file in the bestscore variable
+    bestscore=Bestscore.read()
+    #store the contents of the bestscorer.txt file in the bestscorer variable
+    bestscorer=Bestscorer.read()
+    #tell the user the current bestscore and who it is by
+    print("The best score is ",bestscore,"by",bestscorer)
   else:
     #store the contents of the bestscore.txt file in the bestscore variable
     bestscore=Bestscore.read()
