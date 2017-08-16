@@ -9,6 +9,7 @@ from random import randint
 #import time
 import time
 from time import sleep
+#import libaries to flish stdout buffer and kill the process running the code
 from sys import exit,stdout
 #create a function to simplify showing images
 def show_image(image_location):
