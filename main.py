@@ -8,7 +8,7 @@ import psutil
 from random import randint
 #import time
 import time
-from time import sleep]
+from time import sleep
 from sys import exit,stdout
 #create a function to simplify showing images
 def show_image(image_location):
