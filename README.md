@@ -1,4 +1,4 @@
-## BBCInventathon - Python version
+## BBCInventathon entry - Python version
 
 WARNING UNTESTED!
 
