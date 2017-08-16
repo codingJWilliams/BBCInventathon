@@ -2,22 +2,25 @@
 import msvrct
 #import libary to show images
 from PIL import Image
-#import libary to kill process showung image
+#import libary to kill process showing image
 import psutil
 #import random number generation libary
 from random import randint
 #import time
 import time
 from time import sleep
-#import libaries to flish stdout buffer and kill the process running the code
+#import libaries to flush stdout buffer and kill the process running the code
 from sys import exit,stdout
-#create a function to simplify showing images
+#create a function so only one line is required for showing images
 def show_image(image_location):
   image = Image.open(image_location)
   image.show()
+#create function for clsoing image
 def close_image():
+  #Finds pid of process showing image
   for proc in psutil.process_iter():
     if proc.name() == "display":
+      #Then drives an axe through it's heart!
       proc.kill()
 #read the current keypress and save it to the input_char variable
 input_char=msvrct.getch()
@@ -31,15 +34,21 @@ score=0
 #save current cpu time in the start_time variable
 program_start_time=time.time()
 try:
+  #open Bestscore
   Bestscore = open('bestscore.txt','r') 
   Bestscorer = open('bestscorer.txt','r') 
+  #if Bestscore is blank
   if Bestscore.read()=="":
+    #raise a FileNotFoundError
     raise FileNotFoundError
   else:
+    #store the contents of the bestscore.txt file in the bestscore variable
     bestscore=Bestscore.read()
+    #store the contents of the bestscorer.txt file in the bestscorer variable
     bestscorer=Bestscorer.read()
+    #tell the user the current bestscore and who it is by
     print("The best score is ",bestscore,"by",bestscorer)
-    #while current time minus start tiem is less than or equal to 60
+  #while current time minus start tiem is less than or equal to 60
   while time.time()-program_start_time<=60:
     #save a randomly generated number between 0 and 12 to the number variable
     number=randint(0,12)
@@ -133,32 +142,55 @@ try:
           show_image("/assets/lime-orange.png")
         score=score+1
       close_image()
-  #sleep to give cpu rest    
+    #sleep to give cpu rest    
     sleep(0.05)
+  #tell the user their score
   print("You scored",score)
-  bestscore=float(bestscore)
-  if score>=bestscore:
+  #convert the bestscore variable to an integer
+  bestscore=int(bestscore)
+  #if the score is greater than the bestscore
+  if score>bestscore:
+    #ask for the users name and save it in the name variable
     name=input("What's your name? ")
-    #open the text file in write mode
+    #open the bestscore text file in write mode
     Bestscore=open("bestscore.txt","w")
+    #write the score to the bestscore text file
     Bestscore.write(str(score))
+    #close the text file to advoid errors when we next try and open it and to free up the cpu and ram
     Bestscore.close()
+    #open the bestscorer text file in write mode
     Bestscorer=open("bestscorer.txt","w")
+     #write the contents of the name variable to the bestscorer text file
     Bestscorer.write(str(name))
+    #close the text file to advoid errors when we next try and open it and to free up the cpu and ram
     Bestscorer.close()
+  
   else:
+    #close the text file to advoid errors when we next try and open it and to free up the cpu and ram
     Bestscore.close()
+    #close the text file to advoid errors when we next try and open it and to free up the cpu and ram
+    Bestscorer.close()
+#if the we get a File not found error
 except FileNotFoundError:
+  #tell the user that some files could not be found so we are cretang the neceray files
   print("Files could not be found:Creating files now")
+  #
   Bestscore=open("bestscore.txt","w")
-  #find the current time form the cpu and save it to the start_time variable
-  Bestscore.write("1")
+  #write 0 to the best score file
+  Bestscore.write("0")
   Bestscore=open("bestscorer.txt","w")
   #find the current time form the cpu and save it to the start_time variable
+  #write nothing to the bestscorer fiel but still create it
   Bestscorer.write("")
+  #tell them the files have now been created and to restart the program
   print("Files created please start the program again")
+   #close the text file to advoid errors when we next try and open it and to free up the cpu and ram
   Bestscore.close()
+   #close the text file to advoid errors when we next try and open it and to free up the cpu and ram
   Bestscorer.close()
+#in the unlikely event a user presses ctrl+c in order to quit the game
 except Keyboard Interrupt:
+  #flush the stdout buffer
   stdout.flush()
+  #get the process runign this code to commit suicide
   exit()
