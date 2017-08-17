@@ -7,14 +7,22 @@ This is a python version that is unfortunately serval stages behidn the node/js 
 **_UNTESTED!_**
 
 **_WORKS ON WINDOWS ONLY!_**
+## Prerequisites
+## Software
+* The psutil python libary
+* The pillow python libary
+## Hardware
+* An orange
+* A banana
+* A lemon
+* A lime
+* A makey makey with the arrow keys remaped to 1,2,3 and 4 using the tool at <http://makeymakey.com/remap/>
 ## Installation
-The code only runs on windows but installation couldn't be simpler
+The code only runs on windows
 
-1.Download the install.bash file into your home directory
+1.Git clone this entire resporitory
 
-2.Type `bash install.bash`
+2.Run the setup.py script
 ## Uninstalling
 
-1.Download the uninstall.bash file into the **same directory as the install.bash file** you downloaded for installation
-
-2.Type `bash uninstall.bash`
+1.Delete the BBCInventathon foolder
