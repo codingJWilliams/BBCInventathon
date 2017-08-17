@@ -4,9 +4,9 @@ This is a python version that is unfortunately serval stages behidn the node/js 
 
 ## Warnings
 
-**_WARNING UNTESTED!_**
+**_UNTESTED!_**
 
-**_WARNING WORKS ON WINDOWS ONLY!_**
+**_WORKS ON WINDOWS ONLY!_**
 ## Installation
 The code only runs on windows but installation couldn't be simpler
 
