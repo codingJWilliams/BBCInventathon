@@ -10,6 +10,11 @@ This is a python version that is unfortunately serval stages behidn the node/js 
 ## Installation
 The code only runs on windows but installation couldn't be simpler
 
-1.Download the install.bash file
+1.Download the install.bash file into your home directory
 
 2.Type `bash install.bash`
+## Uninstalling
+
+1.Download the uninstall.bash file into the **same directory as the install.bash file** you downloaded for installation
+
+2.Type `bash uninstall.bash`
