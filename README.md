@@ -6,7 +6,7 @@ Copyright (C) 2017  Rory Sharp and Jay Williams
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
     You have should have recived a copy of the GNU General Public License
-    along with this program in the COPYING file.  If you have not recived this, see <http://www.gnu.org/licenses/>.
+    along with this program in the form of the COPYING file.  If you have not recived this, see <http://www.gnu.org/licenses/gpl-3.0.html>.
 
 This is a python version that is unfortunately serval stages behidn the node/js version due to unexpected delays in finding a libary to detect keypresses.
 
