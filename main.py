@@ -189,7 +189,6 @@ try:
 except FileNotFoundError:
   #tell the user that some files could not be found so we are cretang the neceray files
   print("Files could not be found:Creating files now")
-  #
   Bestscore=open("bestscore.txt","w")
   #write 0 to the best score file
   Bestscore.write("0")
