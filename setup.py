@@ -1,10 +1,12 @@
 import msvrct
 import time
+#fruit mapping you may need to change this
 orange='1'
 bannana='2'
 lemon='3'
 lime='4'
 input_char=msvrct.getch()
+print("Please note that you may need to tweak the fruit mapping in this code and main.py")
 print("Please tap the fruit to check the mapping")
 start_time=time.time()
 while start_time-time.time()<=15:

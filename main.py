@@ -24,7 +24,7 @@ def close_image():
       proc.kill()
 #read the current keypress and save it to the input_char variable
 input_char=msvrct.getch()
-#save the fruit names to the relevant charcaters the makey makey will send
+#save the fruit names to the relevant charcaters the makey makey will send you may need to change this
 orange='1'
 bannana='2'
 lemon='3'
