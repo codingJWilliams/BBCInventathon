@@ -8,7 +8,7 @@ This is a python version that is unfortunately serval stages behidn the node/js 
 
 **_WARNING WORKS ON WINDOWS ONLY!_**
 ## Installation
-The code only runs on windows but installatiosn couldn't be simpler
+The code only runs on windows but installation couldn't be simpler
 
 1.Download the install.bash file
 
