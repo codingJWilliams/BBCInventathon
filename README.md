@@ -33,4 +33,4 @@ The code only runs on windows
 2.Run the setup.py script
 ## Uninstalling
 
-1.Delete the BBCInventathon foolder
+1.Delete the BBCInventathon folder
