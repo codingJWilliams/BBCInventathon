@@ -8,10 +8,10 @@ This is a python version that is unfortunately serval stages behidn the node/js 
 
 **_WORKS ON WINDOWS ONLY!_**
 ## Prerequisites
-## Software
+### Software
 * The psutil python libary
 * The pillow python libary
-## Hardware
+### Hardware
 * An orange
 * A banana
 * A lemon
