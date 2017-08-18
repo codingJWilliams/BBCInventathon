@@ -21,7 +21,7 @@ This is a python version that is unfortunately serval stages behidn the node/js 
 ## Installation
 The code only runs on windows
 
-1.Git clone this entire resporitory
+1.Download this entire repository
 
 2.Run the setup.py script
 ## Uninstalling
