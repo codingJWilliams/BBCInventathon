@@ -1,7 +1,7 @@
 # BBC Inventathon brain training game
 Copyright © 2017  Rory Sharp and Jay Williams
 
-This is a python version that is unfortunately serval stages behidn the node/js version due to unexpected delays in finding a libary to detect keypresses.
+This is a python version that is unfortunately serval stages behidn the [node/js](https://github.com/codingJWilliams/BBCInventathonNode) version due to unexpected delays in finding a libary to detect keypresses.
 
 ## Warnings
 
