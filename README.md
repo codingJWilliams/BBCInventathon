@@ -17,7 +17,7 @@ This is a python version that is unfortunately serval stages behidn the [node/js
 * A banana
 * A lemon
 * A lime
-* A makey makey with the arrow keys remaped to 1,2,3 and 4 using the tool at <http://makeymakey.com/remap/>
+* A makey makey with the arrow keys [remaped](http://makeymakey.com/remap/) to 1,2,3 and 4
 ## Installation
 The code only runs on windows
 
