@@ -24,7 +24,7 @@ Bestscore=open("bestscore.txt","w")
   Bestscore.write("0")
   Bestscore=open("bestscorer.txt","w")
   #find the current time form the cpu and save it to the start_time variable
-  #write nothing to the bestscorer fiel but still create it
+  #write nothing to the bestscorer file but still create it
   Bestscorer.write("")
   Bestscore.close()
   Bestscorer.close()
